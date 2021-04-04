@@ -1,6 +1,14 @@
 import requests
 
 def get_repos(github_url,username,token):
+    """[This function is used to list github repositories for an authenticated user.]
+    Args:
+        github_url ([string]): [the github api url]
+        username ([string]): [your github username]
+        token ([string]): [your github personal access token]
+    Returns:
+        [dict]: [a collection of repositories {id:repository_name}]
+    """
     #the api link to list the repositories
     repo_url=github_url+"/user/repos"
     #get the repositories of the user with its credentials
