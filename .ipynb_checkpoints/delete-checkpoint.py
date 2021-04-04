@@ -24,7 +24,11 @@ if __name__=="__main__":
         try:
             #delete the repositories
             response = requests.delete(url, auth=(GITHUB_USER,GITHUB_TOKEN))
-            print(response.status_code)
+            if response.status_code==204:
+                print("The repository {} has been deleted".format(repos_dict[int(i)]))
+            else :
+                print("Error: Not Found")
+
         except requests.exceptions.RequestException as err:
             raise SystemExit(err)
 
