@@ -11,6 +11,7 @@ def get_repos(github_url,username,token):
         #store each repository name with an id number
         repos_dict.update({i:x['name']})
     #print the values so that you can choose the repositories to delete
+    print("List of repositories:")
     for key,value in repos_dict.items():
         print("{}- {}".format(key,value))
     return repos_dict
