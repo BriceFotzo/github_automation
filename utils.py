@@ -18,8 +18,15 @@ def get_repos(github_url,username,token):
     for i,x in enumerate(repos.json(),1):
         #store each repository name with an id number
         repos_dict.update({i:x['name']})
+    return repos_dict
+def show_repos(repos_dict):
+    """[A function to show the list of repositories]
+
+    Args:
+        repos_dict ([dict]): [a collection of repositories {id:repository_name}]
+    """
     #print the values so that you can choose the repositories to delete
     print("List of repositories:")
     for key,value in repos_dict.items():
         print("{}- {}".format(key,value))
-    return repos_dict
+    
