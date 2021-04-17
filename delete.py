@@ -7,6 +7,7 @@ from time import sleep
 #load the .env variables
 load_dotenv()
 #set the api link
+GITHUB_API = os.getenv('GITHUB_API')
 GITHUB_URL = os.getenv('GITHUB_URL')
 #set your github account info 
 GITHUB_USER = os.getenv('GITHUB_USER')
@@ -14,7 +15,7 @@ GITHUB_TOKEN= os.getenv('GITHUB_TOKEN')
 
 if __name__=="__main__":
     #get the repositories using your credentials
-    repos_dict=get_repos(GITHUB_URL,GITHUB_USER,GITHUB_TOKEN)
+    repos_dict=get_repos(GITHUB_API,GITHUB_USER,GITHUB_TOKEN)
     #repos_dict has the value {1: 'repo1', 2: 'repo2', 3: 'repo3',4: 'repo4'}
     #print the repository list 
     show_repos(repos_dict)
@@ -25,7 +26,7 @@ if __name__=="__main__":
     #loop over the list of repo to delete
     for i in repo_to_del:
         #set the api link for deleting repo
-        url = GITHUB_URL+"/repos/"+GITHUB_USER+"/"+repos_dict[int(i)]
+        url = GITHUB_API+"/repos/"+GITHUB_USER+"/"+repos_dict[int(i)]
         try:
             #delete the repositories
             response = requests.delete(url, auth=(GITHUB_USER,GITHUB_TOKEN))
@@ -39,5 +40,5 @@ if __name__=="__main__":
         #wait 2 seconds before to get the updated list of github repositories
     sleep(2)
     print('\n------------ Repos after delete ------------')
-    show_repos(get_repos(GITHUB_URL,GITHUB_USER,GITHUB_TOKEN))
+    show_repos(get_repos(GITHUB_API,GITHUB_USER,GITHUB_TOKEN))
     
