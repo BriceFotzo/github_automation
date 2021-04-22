@@ -9,14 +9,14 @@ In this repository I'm using python to automate the github taks. As I often use 
  - Cookiecutter Python Package >= 1.4.0 ([Install Python](http://cookiecutter.readthedocs.org/en/latest/installation.html) if it's not already done)  
 
 # Automate add, commit and push 
-> We'll use the file [add-commit-push.py](https://github.com/BriceFotzo/github_automation/blob/master/add-commit-push.py)
+> We'll use the file [add-commit-push.py](https://github.com/BriceFotzo/github_automation/blob/master/add-commit-push.py).
 As those 3 commands can be used frequently (daily,hourly or after finishing some tasks), I made a little trick to reduce them to one line. 
 I just have to run the following command:
 ``` bash
 $ py add-commit-push.py --commit 'Type your commit message'
 ```
 # Automate the deletion of github repositories 
-> We'll use the file [delete_repos.py](https://github.com/BriceFotzo/github_automation/blob/master/delete_repos.py).
+> We'll use the file [delete_repos.py](https://github.com/BriceFotzo/github_automation/blob/master/delete_repos.py).<br>
 
 I often want to delete repositories(often many at once), so I wrapped the process in the delete_repos.py. Find more details in this [medium article](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751).
 To delete repositories, you just have to run this:
@@ -24,7 +24,7 @@ To delete repositories, you just have to run this:
 $ py delete_repos.py
 ```
 # Automate the creation of github repositories
-> We'lle use the file [create_repo.py](https://github.com/BriceFotzo/github_automation/blob/master/create_repo.py) and some functions in [utils.py](https://github.com/BriceFotzo/github_automation/blob/master/utils.py).
+> We'lle use the file [create_repo.py](https://github.com/BriceFotzo/github_automation/blob/master/create_repo.py) and some functions in [utils.py](https://github.com/BriceFotzo/github_automation/blob/master/utils.py).<br>
 When starting a new project, it's important to have a clean and user friendly structure to share it with colleagues. As I work in data science, I use the [cookiecutter data science structure](https://drivendata.github.io/cookiecutter-data-science/). It's _a logical, reasonably standardized, but flexible project structure for doing and sharing data science work._ accoding to the contributors.
 
 >You can find other types of cookiecutter templates following this [link](https://github.com/topics/cookiecutter-template).
