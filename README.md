@@ -2,13 +2,13 @@
 
 In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my projects, I found it useful to automate some tasks like add, commit push or even create and [delete](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751) repositories. 
 
-## Requirements to use this template:
+### Requirements to use this template:
 -----------
  - Git ([Install Git](https://git-scm.com/downloads) if it's not already done)
  - Python 3 ([Install Python](https://www.python.org/downloads/) if it's not already done)
  - Cookiecutter Python Package >= 1.4.0 ([Install Cookiecutter](http://cookiecutter.readthedocs.org/en/latest/installation.html) if it's not already done)  
 
-# Automate add, commit and push 
+## Automate add, commit and push 
 > We'll use the file [add-commit-push.py](https://github.com/BriceFotzo/github_automation/blob/master/add-commit-push.py). <br>
 
 As those 3 commands can be used frequently (daily,hourly or after finishing some tasks), I made a little trick to reduce them to one line. 
@@ -16,7 +16,7 @@ I just have to run the following command:
 ``` bash
 $ py add-commit-push.py --commit 'Type your commit message'
 ```
-# Automate the deletion of github repositories 
+## Automate the deletion 
 > We'll use the file [delete_repos.py](https://github.com/BriceFotzo/github_automation/blob/master/delete_repos.py). <br>
 
 I often want to delete repositories(often many at once), so I wrapped the process in the delete_repos.py. Find more details in this [medium article](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751).
@@ -24,7 +24,7 @@ To delete repositories, you just have to run this:
 ``` bash
 $ py delete_repos.py
 ```
-# Automate the creation of github repositories
+## Automate the creation
 > We'lle use the file [create_repo.py](https://github.com/BriceFotzo/github_automation/blob/master/create_repo.py) and some functions in [utils.py](https://github.com/BriceFotzo/github_automation/blob/master/utils.py).
 <br>
 
