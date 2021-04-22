@@ -54,9 +54,10 @@ $ cd github_automation
 $ touch .env
 ```
 In the .env file, set those variables:
->GITHUB_USER = '{username}'
->GITHUB_API = "https://api.github.com"
->GITHUB_TOKEN='ghp_XXXXXXXXXXXXXXXXXXXXXXX'
+
+>GITHUB_USER = '{username}' <br>
+>GITHUB_API = "https://api.github.com"<br>
+>GITHUB_TOKEN='ghp_XXXXXXXXXXXXXXXXXXXXXXX'<br>
 >GITHUB_URL='https://github.com/{username}'
 
 Then run the following command to setup a new project with (project name, project repository name, your name, a license and a python version)
