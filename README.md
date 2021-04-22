@@ -24,7 +24,9 @@ To delete repositories, you just have to run this:
 $ py delete_repos.py
 ```
 # Automate the creation of github repositories
-> We'lle use the file [create_repo.py](https://github.com/BriceFotzo/github_automation/blob/master/create_repo.py) and some functions in [utils.py](https://github.com/BriceFotzo/github_automation/blob/master/utils.py).<br>
+> We'lle use the file [create_repo.py](https://github.com/BriceFotzo/github_automation/blob/master/create_repo.py) and some functions in [utils.py](https://github.com/BriceFotzo/github_automation/blob/master/utils.py).
+<br>
+
 When starting a new project, it's important to have a clean and user friendly structure to share it with colleagues. As I work in data science, I use the [cookiecutter data science structure](https://drivendata.github.io/cookiecutter-data-science/). It's _a logical, reasonably standardized, but flexible project structure for doing and sharing data science work._ accoding to the contributors.
 
 >You can find other types of cookiecutter templates following this [link](https://github.com/topics/cookiecutter-template).
