@@ -1,6 +1,6 @@
 # Github automation
 
-In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my project, I found it useful to automate some tasks like add, commit push or even create and [delete]() repositories. 
+In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my project, I found it useful to automate some tasks like add, commit push or even create and [delete](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751) repositories. 
 
 # Start a new project with a template
 
@@ -58,7 +58,7 @@ In the .env file, set those variables:
 
 Then run the following command to setup a new project with (project name, project repository name, your name, a license and a python version)
 ``` bash
-$ py main.py
+$ py create_repo.py
 ```
 Once you're first repository is pushed, you can start developping.
 Don't forget to add, commit and push changes every day or every important change (mainly when your code works!)
@@ -114,6 +114,9 @@ The directory structure of your new project looks like this:
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 ```
-
+To delete repositories, run the following file. It's detailed in this [medium article](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751)
+``` bash
+$ py create_repo.py
+```
 
 
