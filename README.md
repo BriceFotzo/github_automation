@@ -1,36 +1,57 @@
 # Github automation
 
-In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my project, I found it useful to automate some tasks like add, commit push or even create and [delete](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751) repositories. 
+In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my projects, I found it useful to automate some tasks like add, commit push or even create and [delete](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751) repositories. 
 
-# Start a new project with a template
+## Requirements to use this template:
+-----------
+ - Git ([Install Git](https://git-scm.com/downloads) if it's not already done)
+ - Python 3 ([Install Python](https://www.python.org/downloads/) if it's not already done)
+ - Cookiecutter Python Package >= 1.4.0 ([Install Python](http://cookiecutter.readthedocs.org/en/latest/installation.html) if it's not already done)  
 
-When starting a new project, it's important to have a clean and user friendly structure. As I work in data science, I use the [cookiecutter data science structure](https://drivendata.github.io/cookiecutter-data-science/). It's _a logical, reasonably standardized, but flexible project structure for doing and sharing data science work._ accoding to the contributors.
+# Automate add, commit and push 
+> We'll use the file [add-commit-push.py](https://github.com/BriceFotzo/github_automation/blob/master/add-commit-push.py)
+As those 3 commands can be used frequently (daily,hourly or after finishing some tasks), I made a little trick to reduce them to one line. 
+I just have to run the following command:
+``` bash
+$ py add-commit-push.py --commit 'Type your commit message'
+```
+# Automate the deletion of github repositories 
+> We'll use the file [delete_repos.py](https://github.com/BriceFotzo/github_automation/blob/master/delete_repos.py).
+
+I often want to delete repositories(often many at once), so I wrapped the process in the delete_repos.py. Find more details in this [medium article](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751).
+To delete repositories, you just have to run this:
+``` bash
+$ py delete_repos.py
+```
+# Automate the creation of github repositories
+> We'lle use the file [create_repo.py](https://github.com/BriceFotzo/github_automation/blob/master/create_repo.py) and some functions in [utils.py](https://github.com/BriceFotzo/github_automation/blob/master/utils.py).
+When starting a new project, it's important to have a clean and user friendly structure to share it with colleagues. As I work in data science, I use the [cookiecutter data science structure](https://drivendata.github.io/cookiecutter-data-science/). It's _a logical, reasonably standardized, but flexible project structure for doing and sharing data science work._ accoding to the contributors.
 
 >You can find other types of cookiecutter templates following this [link](https://github.com/topics/cookiecutter-template).
 
-### Requirements to use this template:
+### Advice to use this template:
 -----------
- - Git
- - A folder dedicated to all your data science projects including python, scala, notebooks files, etc...
- - Python 3
- - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip depending on how you manage your Python packages:
+ - Create a folder dedicated to all your data science projects including python, scala, notebooks files, etc...
 
-**Step 1** - Install Git if it's not already done <br>
-Follow this link [Git Downloads](https://git-scm.com/downloads)
-
-**Step 2** - Create the data science folder 
+**Step 1** - Create the data science folder 
 ``` bash
 $ mkdir my-data-science-projects
 ```
-
-**Step 3** - Install python if it's not already done<br>
-Follow this link [Python Downloads](https://www.python.org/downloads/)
-
-**Step 4** - Install cookiecutter
+**Step 2** - Clone this repository and set the environment
 ``` bash
-$ pip install cookiecutter
+$ git clone https://github.com/BriceFotzo/github_automation
 ```
-Once you've download cookiecutter, you're ready to start.
+**Step 3** - Navigate to the repository and create a .env file to set environment variables
+``` bash
+$ cd github_automation
+$ touch .env
+```
+**Step 4** - In the .env file, set those variables:
+
+>GITHUB_USER = '{username}' <br>
+>GITHUB_API = "https://api.github.com"<br>
+>GITHUB_TOKEN='ghp_XXXXXXXXXXXXXXXXXXXXXXX'<br>
+>GITHUB_URL='https://github.com/{username}'
 
 # Starting a new project 
 
@@ -40,21 +61,6 @@ Navigate first to your **data science projects** folder.
 ``` bash
 $ cd my-data-science-projects
 ```
-Clone this repository and set the environment
-``` bash
-$ git clone https://github.com/BriceFotzo/github_automation
-```
-Navigate to the repository and create a .env file to set environment variables
-``` bash
-$ cd github_automation
-$ touch .env
-```
-In the .env file, set those variables:
-
->GITHUB_USER = '{username}' <br>
->GITHUB_API = "https://api.github.com"<br>
->GITHUB_TOKEN='ghp_XXXXXXXXXXXXXXXXXXXXXXX'<br>
->GITHUB_URL='https://github.com/{username}'
 
 Then run the following command to setup a new project with (project name, project repository name, your name, a license and a python version)
 ``` bash
@@ -114,9 +120,6 @@ The directory structure of your new project looks like this:
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 ```
-To delete repositories, run the following file. It's detailed in this [medium article](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751)
-``` bash
-$ py create_repo.py
-```
+
 
 
