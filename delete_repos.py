@@ -9,7 +9,7 @@ load_dotenv()
 #set the api link
 GITHUB_API = os.getenv('GITHUB_API')
 GITHUB_URL = os.getenv('GITHUB_URL')
-#set your github account info 
+#set your github account credentials 
 GITHUB_USER = os.getenv('GITHUB_USER')
 GITHUB_TOKEN= os.getenv('GITHUB_TOKEN')
 

@@ -41,10 +41,10 @@ def create_repo(github_api,repo_name,is_public,username,token):
         token (string): your github personal access token
 
     Raises:
-        SystemExit: description
+        SystemExit: an exception to raise
 
     Returns:
-        type: description
+        integer: it's a request response
     """
     if is_public:
         data = '{"name": "' + repo_name + '", "public": true }'

@@ -54,20 +54,19 @@ $ touch .env
 >GITHUB_TOKEN='ghp_XXXXXXXXXXXXXXXXXXXXXXX'<br>
 >GITHUB_URL='https://github.com/{username}'
 
-# Starting a new project 
+### Starting a new project 
 
 Every time you'll start a new project, follow those steps:
-
 Navigate first to your **data science projects** folder.
 ``` bash
 $ cd my-data-science-projects
 ```
-
 Then run the following command to setup a new project with (project name, project repository name, your name, a license and a python version)
 ``` bash
 $ py create_repo.py
 ```
-Once you're first repository is pushed, you can start developping.
+Follow the instructions to setup your repostiory. Both local and online repositories will be created.
+You can then start developping.
 Don't forget to add, commit and push changes every day or every important change (mainly when your code works!)
 
 ### The resulting directory structure
