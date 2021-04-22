@@ -1,6 +1,6 @@
 # Github automation
 
-In this repository I'm using python to automate the github actions.
+In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my project, I found it useful to automate some tasks like create and [delete]() repositories. 
 >I automate those task because some are not user friendly and repetitive.
 
 # Start data science projects with a template
