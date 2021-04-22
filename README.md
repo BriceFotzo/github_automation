@@ -1,16 +1,12 @@
 # Github automation
 
-In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my project, I found it useful to automate some tasks like create and [delete]() repositories. 
->I automate those task because some are not user friendly and repetitive.
+In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my project, I found it useful to automate some tasks like add, commit push or even create and [delete]() repositories. 
 
-# Start data science projects with a template
+# Start a new project with a template
 
-For this template, we'll use cookiecutter.
-According to the contributors, it's _a logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
+When starting a new project, it's important to have a clean and user friendly structure. As I work in data science, I use the [cookiecutter data science structure](https://drivendata.github.io/cookiecutter-data-science/). It's _a logical, reasonably standardized, but flexible project structure for doing and sharing data science work._ accoding to the contributors.
 
-
-#### [The project homepage](http://drivendata.github.io/cookiecutter-data-science/)
-
+>You can find other types of cookiecutter templates following this [link](https://github.com/topics/cookiecutter-template).
 
 ### Requirements to use this template:
 -----------
