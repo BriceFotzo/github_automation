@@ -11,7 +11,7 @@ parser.add_argument('--commit', type=str, nargs='+',
                     help='a message for the commit')
 
 commit_message = vars(parser.parse_args())['commit'][0]
-
+print(commit_message)
 if __name__=="__main__":
     print("-------------------- ADD --------------------")
     os.system("git add .")
