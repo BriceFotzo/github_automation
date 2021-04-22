@@ -11,7 +11,6 @@ In this repository I'm using python to automate the github taks. As I often use 
 # Automate add, commit and push 
 > We'll use the file [add-commit-push.py](https://github.com/BriceFotzo/github_automation/blob/master/add-commit-push.py). 
 <br>
-
 As those 3 commands can be used frequently (daily,hourly or after finishing some tasks), I made a little trick to reduce them to one line. 
 I just have to run the following command:
 ``` bash
