@@ -16,7 +16,7 @@ I just have to run the following command:
 $ py add-commit-push.py --commit 'Type your commit message'
 ```
 # Automate the deletion of github repositories 
-> We'll use the file [delete_repos.py](https://github.com/BriceFotzo/github_automation/blob/master/delete_repos.py).<br>
+> We'll use the file [delete_repos.py](https://github.com/BriceFotzo/github_automation/blob/master/delete_repos.py). <br>
 
 I often want to delete repositories(often many at once), so I wrapped the process in the delete_repos.py. Find more details in this [medium article](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751).
 To delete repositories, you just have to run this:
