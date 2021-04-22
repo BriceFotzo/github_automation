@@ -6,7 +6,7 @@ In this repository I'm using python to automate the github taks. As I often use 
 -----------
  - Git ([Install Git](https://git-scm.com/downloads) if it's not already done)
  - Python 3 ([Install Python](https://www.python.org/downloads/) if it's not already done)
- - Cookiecutter Python Package >= 1.4.0 ([Install Python](http://cookiecutter.readthedocs.org/en/latest/installation.html) if it's not already done)  
+ - Cookiecutter Python Package >= 1.4.0 ([Install Cookiecutter](http://cookiecutter.readthedocs.org/en/latest/installation.html) if it's not already done)  
 
 # Automate add, commit and push 
 > We'll use the file [add-commit-push.py](https://github.com/BriceFotzo/github_automation/blob/master/add-commit-push.py).
@@ -31,11 +31,9 @@ When starting a new project, it's important to have a clean and user friendly st
 
 >You can find other types of cookiecutter templates following this [link](https://github.com/topics/cookiecutter-template).
 
-### Advice to use this template:
------------
- - Create a folder dedicated to all your data science projects including python, scala, notebooks files, etc...
+### Setting up your github projects environment
 
-**Step 1** - Create the data science folder 
+**Step 1** - Create a workspace for your projects
 ``` bash
 $ mkdir my-data-science-projects
 ```
