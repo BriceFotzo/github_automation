@@ -1,5 +1,5 @@
 # Github automation
-![](https://komarev.com/ghpvc/?username=bricefotzo) <br>
+![](https://komarev.com/ghpvc/?username=bricefotzo&color=brightgreenlabel=Views) <br>
 In this repository I'm using python to automate the github taks. As I often use github to host and manage versions of my projects, I found it useful to automate some tasks like add, commit push or even create and [delete](https://bricefotzo.medium.com/how-to-delete-many-git-repositories-at-once-fe4e9ed61751) repositories. 
 
 ### Requirements to use this template:
